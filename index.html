@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy File Creator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Dummy File Creator</h1>
+    <p>File will take longer to create depending on size.</p>
+    
+    <label for="fileSizeInput">File Size: </label>
+    <input type="number" id="fileSizeInput" min="1" step="1" value="10">
+    
+    <select id="fileSizeUnit">
+        <option value="bytes">Bytes</option>
+        <option value="kilobytes">Kilobytes</option>
+        <option value="megabytes" selected>Megabytes</option>
+        <option value="gigabytes">Gigabytes</option>
+    </select>
+
+    <button onclick="createDummyFile()">Create Dummy File</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
